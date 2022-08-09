@@ -1,7 +1,13 @@
 const cards = document.querySelectorAll('.card');
+const resetButton = document.querySelector('.reset-button');
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
+
+// reinicia a página para uma nova partida
+resetButton.addEventListener('click', function() {
+    location.reload();
+})
 
 // Função para virar a carta
 function flipCard(){
